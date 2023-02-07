@@ -46,8 +46,8 @@ export const SingleLocation = ({ }) => {
       .then(res => res.json())
       .then((data) => {
         setIdOfUserWhoClickedButton(data.response.visitors)
-        //TO GET THE USERNAME TO SHOW DIRECTLY 
-        //window.location.reload()
+        // TO GET THE USERNAME TO SHOW DIRECTLY 
+        window.location.reload()
       })
       .catch(error => console.error(error))
 
@@ -66,6 +66,7 @@ export const SingleLocation = ({ }) => {
       .then(res => res.json())
       .then((data) => {
         setIdOfUserWhoClickedButton(data.response.visitors)
+           window.location.reload()
       })
       .catch(error => console.error(error))
   }
@@ -82,6 +83,7 @@ export const SingleLocation = ({ }) => {
       .then(res => res.json())
       .then((data) => {
         setIdOfUserWhoClickedButton(data.response.visitors)
+        window.location.reload()
       })
       .catch(error => console.error(error))
   }
@@ -98,6 +100,7 @@ export const SingleLocation = ({ }) => {
       .then(res => res.json())
       .then((data) => {
         setIdOfUserWhoClickedButton(data.response.visitors)
+        window.location.reload()
       })
       .catch(error => console.error(error))
   }

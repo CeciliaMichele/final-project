@@ -9,19 +9,7 @@ import { useDispatch } from 'react-redux';
 export const Welcome = () => {
   const dispatch = useDispatch();
 
-  const persistedStateJSON = localStorage.getItem("userReduxState");
-  if (persistedStateJSON) {
-    const persistedState = JSON.parse(persistedStateJSON);
-    dispatch(user.actions.setId(persistedState.id))
-    dispatch(user.actions.setAccessToken(persistedState.accessToken));
-    dispatch(user.actions.setUsername(persistedState.username));
-    dispatch(user.actions.setName(persistedState.name));
-    dispatch(user.actions.setAge(persistedState.age))
-    dispatch(user.actions.setEmail(persistedState.email));
-    dispatch(user.actions.setInstagram(persistedState.instagram));
-    dispatch(user.actions.setPresentation(persistedState.presentation));
-    dispatch(user.actions.setFacebook(persistedState.facebook));
-  }
+  
   return (
     <WelcomeWrapper>
       <SmallHeaderText>Välkommen till</SmallHeaderText>
